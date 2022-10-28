@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 
+interface Personaje{
+  nombre:string,
+  poder:number
+}
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
@@ -7,8 +11,12 @@ import { Component } from '@angular/core';
 })
 export class MainPageComponent  {
 
+  nuevo:Personaje = {
+    nombre: 'Truns',
+    poder: 160
+  }
   agregar(){
-    console.log('hey!');
+    console.log(this.nuevo);
   }
 
 }

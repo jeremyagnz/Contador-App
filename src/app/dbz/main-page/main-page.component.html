@@ -6,9 +6,9 @@
     <h3>Personajes</h3>
     <hr />
     <ul>
-      <li>Krilin - 700</li>
-      <li>Goku - 17,000</li>
-      <li>Vegueta - 7500</li>
+      <li *ngFor="let personaje of personajes">
+        {{personaje.nombre}} - {{personaje.poder | number}}
+      </li>
     </ul>
   </div>
 
